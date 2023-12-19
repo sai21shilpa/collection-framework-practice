@@ -14,7 +14,9 @@ class HelloWorld {
        int target=83;
        int[] res=linearSearch(arr,target);
        System.out.print(Arrays.toString(res));
-       
+       System.out.println();
+       int res=linearSearchMax(arr,target);
+       System.out.print(res);
     }
     
    
@@ -32,6 +34,23 @@ class HelloWorld {
           }
       }
       return new int[]{-1,-1};  
+    }
+
+
+     static int linearSearchMax(int[][] arr)
+    {
+     int max=Integer.MIN_VALUE;
+     for(int[] row:arr)
+     {
+         for(int col:row)
+         {
+            if( col>max )
+            {
+                max=col;
+            }
+         }
+     }
+     return max;
     }
          
 }
