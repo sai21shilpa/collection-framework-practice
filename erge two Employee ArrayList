@@ -1,0 +1,6 @@
+List<Employee> list1 = ...; // Your first list
+List<Employee> list2 = ...; // Your second list
+
+List<Employee> mergedAndSorted = Stream.concat(list1.stream(), list2.stream())
+    .sorted(Comparator.comparingInt(Employee::getAge))
+    .collect(Collectors.toList());
