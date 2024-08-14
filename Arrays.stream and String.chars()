@@ -1,0 +1,2 @@
+LongStream is = Arrays.stream(new long[]{1,2,3,4});
+IntStream is2 = "abc".chars();
