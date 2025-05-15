@@ -1,0 +1,17 @@
+// Java code to illustrate isEmpty() method
+// When Priority Queue doesn't contains element
+import java.util.PriorityQueue;
+
+// Driver Class
+public class Main {
+    // Main Function
+    public static void main(String[] args)
+    {
+        // Creating an empty PriorityQueue
+        PriorityQueue PQ = new PriorityQueue<Integer>();
+
+        // Checking whether PQ is empty or not
+        // by calling isEmpty() method on PQ
+        System.out.println(PQ.isEmpty());
+    }
+}
