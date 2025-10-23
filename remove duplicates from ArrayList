@@ -1,0 +1,5 @@
+    ArrayList<String> list = new ArrayList<>(/* elements */);
+    
+    Set<String> set = new LinkedHashSet<>(list);
+    list.clear();
+    list.addAll(set);
