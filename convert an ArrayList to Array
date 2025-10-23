@@ -1,0 +1,14 @@
+ArrayList<String> al = new ArrayList<>();
+        al.add("Yash");
+        al.add("RAM");
+        al.add("ajtech");
+        al.add("ANAND");
+
+        // Convert ArrayList to Array
+        String[] array = new String[al.size()];
+        array = al.toArray(array);
+
+        // Print the array
+        for (String s : array) {
+            System.out.println(s);
+        }
