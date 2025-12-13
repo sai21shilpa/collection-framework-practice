@@ -1,0 +1,10 @@
+Set<String> set = new HashSet<String>() {
+
+       {  
+
+        add("California"); 
+        add("Chicago");
+        add("New York"); 
+
+       }
+};
