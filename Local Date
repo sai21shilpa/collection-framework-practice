@@ -1,0 +1,9 @@
+private LocalDate getNextDay(LocalDate localdate) {
+
+    return localdate.plusDays(1);
+}
+
+private LocalDate getPrevDay(LocalDate localdate) {
+
+    return localdate.minusDays(1);
+}
