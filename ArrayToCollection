@@ -1,0 +1,25 @@
+// Convert an Array into Collection in Java
+// import java util library
+import java.util.*;
+
+// class for writing logic of the problem
+public class ArrayToCollection {
+    public static void main(String args[])
+    {
+        // array input
+        String students[] = { "Kamlesh", "Abhay",
+                              "Abhishek", "Shivansh" };
+
+        // printing input elements for comparison
+        System.out.println("Array input: "
+                           + Arrays.toString(students));
+
+        // converting array into Collection
+        // with asList() function
+        List studentList = Arrays.asList(students);
+
+        // print converted elements
+        System.out.println("Converted elements: "
+                           + studentList);
+    }
+}
