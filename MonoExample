@@ -1,0 +1,13 @@
+public class MonoExample {
+    public static void main(String[] args) {
+        // 1. Create a Mono that emits a single String value
+        Mono<String> greetingMono = Mono.just("Hello, World!");
+
+        // 2. Subscribe to the Mono to process the emitted value
+        greetingMono.subscribe(
+            successValue -> System.out.println("Received: " + successValue), // Consumer for the next signal (the value)
+            error -> System.err.println("Error: " + error.getMessage()),    // Consumer for the error signal
+            () -> System.out.println("Mono consumed.")                      // Runnable for the complete signal
+        );
+    }
+}
