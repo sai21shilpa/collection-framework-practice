@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(3);
+        list.add(1);
+        list.add(2);
+
+        Collections.sort(list);
+
+        int k = 2;
+        System.out.println(k + "th smallest element: " + list.get(k - 1));
+    }
+}
