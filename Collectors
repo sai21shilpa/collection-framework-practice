@@ -1,0 +1,2 @@
+Map<String, Long> countMap = list.stream()
+    .collect(Collectors.groupingBy(element -> element, Collectors.counting()));
