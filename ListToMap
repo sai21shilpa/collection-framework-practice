@@ -1,0 +1,20 @@
+ Convert List to Map
+
+import java.util.*;
+import java.util.stream.*;
+
+public class ListToMap {
+public static void main(String[] args) {
+List<String> list = Arrays.asList("Apple", "Banana", "Orange");
+
+Map<Integer, String> map = IntStream.range(0, list.size())
+.boxed()
+.collect(Collectors.toMap(i -> i, list::get));
+
+System.out.println("Converted Map: " + map);
+}
+}
+
+Output:
+
+Converted Map: {0=Apple, 1=Banana, 2=Orange}
