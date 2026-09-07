@@ -1,0 +1,15 @@
+7. Shuffle Elements in a List
+
+import java.util.*;
+
+public class ShuffleList {
+public static void main(String[] args) {
+List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+Collections.shuffle(list);
+System.out.println("Shuffled List: " + list);
+}
+}
+
+Output:
+
+Shuffled List: [3, 1, 5, 2, 4] (random output)
