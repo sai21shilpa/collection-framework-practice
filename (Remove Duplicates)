@@ -1,0 +1,16 @@
+8. Convert List to Set (Remove Duplicates)
+
+import java.util.*;
+
+public class ListToSet {
+public static void main(String[] args) {
+List<String> names = Arrays.asList("John", "Jane", "John", "Alice");
+
+Set<String> uniqueNames = new HashSet<>(names);
+System.out.println("Unique Names: " + uniqueNames);
+}
+}
+
+Output:
+
+Unique Names: [Alice, Jane, John]
