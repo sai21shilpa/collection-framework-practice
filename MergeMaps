@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class MergeMaps {
+public static void main(String[] args) {
+Map<Integer, String> map1 = new HashMap<>();
+map1.put(1, "Apple");
+map1.put(2, "Banana");
+
+Map<Integer, String> map2 = new HashMap<>();
+map2.put(2, "Grape"); // Overwrites Banana
+map2.put(3, "Cherry");
+
+map2.forEach(map1::put); // Merges map2 into map1
+System.out.println("Merged Map: " + map1);
+}
+}
+
+Output:
+
+Merged Map: {1=Apple, 2=Grape, 3=Cherry}
