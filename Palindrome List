@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class PalindromeList {
+public static void main(String[] args) {
+List<Integer> list = Arrays.asList(1, 2, 3, 2, 1);
+List<Integer> reversedList = new ArrayList<>(list);
+Collections.reverse(reversedList);
+
+boolean isPalindrome = list.equals(reversedList);
+System.out.println("Is palindrome? " + isPalindrome);
+}
+}
