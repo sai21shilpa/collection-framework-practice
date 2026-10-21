@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class LongestString {
+public static void main(String[] args) {
+List<String> words = Arrays.asList("apple", "banana", "strawberry", "kiwi");
+
+String longest = words.stream()
+.max(Comparator.comparingInt(String::length))
+.orElse(null);
+
+System.out.println("Longest string: " + longest);
+}
+}
+
+Output:
+
+Longest string: strawberry
